@@ -60,7 +60,7 @@ body{
 }
 
 .title{
-    width: 20rem;
+    width: 24rem;
     font-size: 3rem;
     color: var(--textoTitulo);
     font-weight: 900;
@@ -71,6 +71,7 @@ body{
 /*MEDIA QUERIES*/
 
 @media all and (min-width: 768px){
+
     .header{
         flex-direction: row;
         justify-content: space-between;
@@ -82,5 +83,10 @@ body{
         margin-bottom: 0;
         margin-right: 30px;
     }
+
+    .title{
+        font-size: 4rem;
+    }
+
 
 }

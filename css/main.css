@@ -5,3 +5,62 @@
     --textoTitulo: #ffffff;
 }
 
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--letraPrincipal);
+}
+
+/* HEADER*/
+
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid red 1px;
+}
+
+.logo{
+    width: 155px;
+    margin: 10px 0;
+}
+
+.nav{
+    margin-bottom: 13px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    font-size: 1.6rem;
+    color: var(--textoMenu);
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+/*MAIN*/
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondoPagina);
+}
+
+.title{
+    width: 20rem;
+    font-size: 3rem;
+    color: var(--textoTitulo);
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.3;
+}

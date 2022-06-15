@@ -1,8 +1,8 @@
 :root{
-    --letraPrincipal: 'Rubik', sans-serif;
-    --textoMenu: #4a4a4a;
-    --fondoPagina: #3CDBC0;
-    --textoTitulo: #ffffff;
+    --principalFont: 'Rubik', sans-serif;
+    --textMenu: #4a4a4a;
+    --pageBackground: #3CDBC0;
+    --textTitle: #ffffff;
 }
 
 html{
@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    font-family: var(--letraPrincipal);
+    font-family: var(--principalFont);
 }
 
 /* HEADER*/
@@ -32,6 +32,7 @@ body{
     margin: 10px 0;
 }
 
+
 .nav{
     margin-bottom: 13px;
 }
@@ -41,11 +42,12 @@ body{
     align-items: center;
 }
 
-.menu li{
+.menu li a{
     font-size: 1.6rem;
-    color: var(--textoMenu);
+    color: var(--textMenu);
     text-transform: uppercase;
-    margin: 0 10px;
+    text-decoration: none;
+    padding: 10px;
 }
 
 /*MAIN*/
@@ -56,14 +58,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--fondoPagina);
+    background-color: var(--pageBackground);
 }
 
 .title{
     width: 24rem;
     font-size: 3rem;
-    color: var(--textoTitulo);
+    color: var(--textTitle);
     font-weight: 800;
+    text-transform: capitalize;
     text-align: center;
     line-height: 1.3;
 }
@@ -87,6 +90,4 @@ body{
     .title{
         font-size: 4rem;
     }
-
-
 }
